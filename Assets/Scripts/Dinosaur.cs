@@ -13,6 +13,7 @@ public class Dinosaur : MonoBehaviour
     public float speed;
     public float vision;
     public float eyePosition;
+    public string speciesName;
 
     public Color color;
     // Start is called before the first frame update

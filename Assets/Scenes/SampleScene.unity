@@ -235,16 +235,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5290c4fcb0f8879469c619eab31834b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 0
-  speed: 0
+  tailHeight: 0.84
+  tailWidth: 1.01
+  headHeight: 0.51
+  headWidth: 0.5
+  torsoHeight: 1.08
+  torsoWidth: 1.03
+  speed: 0.12
   vision: 0
   eyePosition: 0
-  tailLength: 1
-  beakLength: 0
-  headLength: 0.5
-  headWidth: 0.5
-  color: {r: 0, g: 0, b: 0, a: 0}
-  clawLength: 1
+  color: {r: 0.03529412, g: 0.32156864, b: 0.03529412, a: 1}
+  clawWidth: 0.72
+  clawHeight: 1.29
   tailSprite: {fileID: 21300000, guid: 2682f6287a08b33448448cb8d546f068, type: 3}
   torsoSprite: {fileID: 21300000, guid: a03ff4e0caf293f478c0b90e161351cc, type: 3}
   clawSprite: {fileID: 21300000, guid: bb95fc66fe08c284497d4b8cd7a5005b, type: 3}
