@@ -206,6 +206,126 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &562764564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 562764566}
+  - component: {fileID: 562764565}
+  m_Layer: 0
+  m_Name: TRex (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &562764565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562764564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5290c4fcb0f8879469c619eab31834b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tailHeight: 0.84
+  tailWidth: 1.01
+  headHeight: 0.51
+  headWidth: 0.5
+  torsoHeight: 1.08
+  torsoWidth: 1.03
+  speed: 0.12
+  vision: 0
+  eyePosition: 0
+  speciesName: 
+  color: {r: 0.03529412, g: 0.32156864, b: 0.03529412, a: 1}
+  clawWidth: 0.72
+  clawHeight: 1.29
+  tailSprite: {fileID: 21300000, guid: 2682f6287a08b33448448cb8d546f068, type: 3}
+  torsoSprite: {fileID: 21300000, guid: a03ff4e0caf293f478c0b90e161351cc, type: 3}
+  clawSprite: {fileID: 21300000, guid: bb95fc66fe08c284497d4b8cd7a5005b, type: 3}
+  headSprite: {fileID: 21300000, guid: 4d53b813c1671ee4eab84b8ed1588d48, type: 3}
+--- !u!4 &562764566
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562764564}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.51, y: -3.68, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &816453573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 816453575}
+  - component: {fileID: 816453574}
+  m_Layer: 0
+  m_Name: TRex (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &816453574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816453573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5290c4fcb0f8879469c619eab31834b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tailHeight: 0.84
+  tailWidth: 1.01
+  headHeight: 0.51
+  headWidth: 0.5
+  torsoHeight: 1.08
+  torsoWidth: 1.03
+  speed: 0.12
+  vision: 0
+  eyePosition: 0
+  speciesName: 
+  color: {r: 0.03529412, g: 0.32156864, b: 0.03529412, a: 1}
+  clawWidth: 0.72
+  clawHeight: 1.29
+  tailSprite: {fileID: 21300000, guid: 2682f6287a08b33448448cb8d546f068, type: 3}
+  torsoSprite: {fileID: 21300000, guid: a03ff4e0caf293f478c0b90e161351cc, type: 3}
+  clawSprite: {fileID: 21300000, guid: bb95fc66fe08c284497d4b8cd7a5005b, type: 3}
+  headSprite: {fileID: 21300000, guid: 4d53b813c1671ee4eab84b8ed1588d48, type: 3}
+--- !u!4 &816453575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816453573}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.51, y: -1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &947798941
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,6 +364,7 @@ MonoBehaviour:
   speed: 0.12
   vision: 0
   eyePosition: 0
+  speciesName: 
   color: {r: 0.03529412, g: 0.32156864, b: 0.03529412, a: 1}
   clawWidth: 0.72
   clawHeight: 1.29
@@ -264,4 +385,108 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1945309687
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1945309689}
+  - component: {fileID: 1945309688}
+  m_Layer: 0
+  m_Name: Unit Selector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1945309688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945309687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e22ad7f5c2464242bc84fc732344822, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectorSprite: {fileID: 21300000, guid: b8515efd5f97a494b9ba41da42e2f168, type: 3}
+--- !u!4 &1945309689
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945309687}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1978277956
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1978277958}
+  - component: {fileID: 1978277957}
+  m_Layer: 0
+  m_Name: TRex (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1978277957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978277956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5290c4fcb0f8879469c619eab31834b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tailHeight: 0.84
+  tailWidth: 1.01
+  headHeight: 0.51
+  headWidth: 0.5
+  torsoHeight: 1.08
+  torsoWidth: 1.03
+  speed: 0.12
+  vision: 0
+  eyePosition: 0
+  speciesName: 
+  color: {r: 0.03529412, g: 0.32156864, b: 0.03529412, a: 1}
+  clawWidth: 0.72
+  clawHeight: 1.29
+  tailSprite: {fileID: 21300000, guid: 2682f6287a08b33448448cb8d546f068, type: 3}
+  torsoSprite: {fileID: 21300000, guid: a03ff4e0caf293f478c0b90e161351cc, type: 3}
+  clawSprite: {fileID: 21300000, guid: bb95fc66fe08c284497d4b8cd7a5005b, type: 3}
+  headSprite: {fileID: 21300000, guid: 4d53b813c1671ee4eab84b8ed1588d48, type: 3}
+--- !u!4 &1978277958
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978277956}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.95, y: -9.03, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

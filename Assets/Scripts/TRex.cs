@@ -34,10 +34,6 @@ public class TRex : Dinosaur
         headGo.transform.parent = gameObject.transform;
 
         torsoGo.AddComponent<SpriteRenderer>().sprite = torsoSprite;
-
-        
-
-
         tailGo.AddComponent<SpriteRenderer>().sprite = tailSprite;
         leftClawGo.AddComponent<SpriteRenderer>().sprite = clawSprite;
         rightClawGo.AddComponent<SpriteRenderer>().sprite = clawSprite;
@@ -49,6 +45,7 @@ public class TRex : Dinosaur
         leftClawGo.AddComponent<CapsuleCollider2D>().direction = CapsuleDirection2D.Horizontal;
         rightClawGo.AddComponent<CapsuleCollider2D>().direction = CapsuleDirection2D.Horizontal;
 
+        torsoGo.transform.localPosition = new Vector3(0.0f, 0.0f, 0.0f);
         headGo.transform.localPosition = new Vector3(0.5f, 0.0f, -0.5f);
         tailGo.transform.localPosition = new Vector3(-0.4f, 0.0f, 1.0f);
         leftClawGo.transform.localPosition = new Vector3(0.2f, 0.3f, 1.0f);

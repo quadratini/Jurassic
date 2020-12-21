@@ -8,7 +8,23 @@ public class UnitSelector : MonoBehaviour
     GameObject selectedUnit;
     GameObject hoveredUnit;
 
+    public Sprite selectorSprite;
+
+    GameObject[] selectors;
+
     private void Start() {
+        selectors = new GameObject[4];
+        selectors[0] = new GameObject("Top Left Selector");
+        selectors[1] = new GameObject("Top Right Selector");
+        selectors[1].transform.localRotation = Quaternion.Euler(0f, 180f, 0f);
+        selectors[2] = new GameObject("Bottom Left Selector");
+        selectors[2].transform.localRotation = Quaternion.Euler(0f, 0f, 90f);
+        selectors[3] = new GameObject("Bottom Right Selector");
+        selectors[3].transform.localRotation = Quaternion.Euler(0f, 0f, 180f);
+        foreach (GameObject go in selectors) {
+            go.AddComponent<SpriteRenderer>().sprite = selectorSprite;
+            go.SetActive(false);
+        }
     }
 
     private void Update() {
@@ -33,11 +49,15 @@ public class UnitSelector : MonoBehaviour
         if (Input.GetMouseButtonDown(0)) {
             if (hit.collider != null) {
                 GameObject go = GetRootGameObject(hit.collider);
-                Transform tf = go.transform;
-                //DeselectUnit();
-                //SelectUnit(go);
+                PlaceSelectorsAroundGameObject(go);
+                
+                foreach (GameObject selector in selectors) {
+                    selector.SetActive(true);
+                }
             } else {
-                //DeselectUnit();
+                foreach (GameObject selector in selectors) {
+                    selector.SetActive(false);
+                }
             }
 
         }
@@ -74,8 +94,12 @@ public class UnitSelector : MonoBehaviour
         unitNameText.offsetZ = 10;
         unitNameText.alignment = TextAlignment.Center;
         unitNameText.anchor = TextAnchor.LowerCenter;
-        unitNameText.transform.localPosition = new Vector2(
-            0, (unit.GetComponent<Dinosaur>().torsoWidth + .25f) / 2
+        Bounds bo = new Bounds(unit.transform.position, Vector2.zero);
+        foreach (Renderer r in unit.GetComponentsInChildren<SpriteRenderer>()) {
+            bo.Encapsulate(r.bounds);
+        }
+        unitNameText.transform.position = new Vector2(
+            bo.center.x, bo.center.y + bo.extents.y
         );
         unitNameText.fontSize = 200;
         unitNameText.characterSize = .02f;
@@ -88,6 +112,19 @@ public class UnitSelector : MonoBehaviour
             tf = tf.transform.parent;
         }
         return tf.gameObject;
+    }
+
+    private void PlaceSelectorsAroundGameObject(GameObject go) {
+        Transform tf = go.transform;
+
+        Bounds bo = new Bounds(tf.position, Vector2.zero);
+        foreach (Renderer r in go.GetComponentsInChildren<SpriteRenderer>()) {
+            bo.Encapsulate(r.bounds);
+        }
+        selectors[0].transform.position = new Vector2(bo.center.x - bo.extents.x - .02f, bo.center.y + bo.extents.y);
+        selectors[1].transform.position = new Vector2(bo.center.x + bo.extents.x, bo.center.y + bo.extents.y);
+        selectors[2].transform.position = new Vector2(bo.center.x - bo.extents.x, bo.center.y - bo.extents.y);
+        selectors[3].transform.position = new Vector2(bo.center.x + bo.extents.x, bo.center.y - bo.extents.y);
     }
 
     public static void SetUnitColor(GameObject unit, Color c) {
