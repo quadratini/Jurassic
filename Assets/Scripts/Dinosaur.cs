@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dinosaur : MonoBehaviour
+public class Dinosaur : Unit, INameable
 {
     public float tailHeight;
     public float tailWidth;
@@ -26,5 +26,9 @@ public class Dinosaur : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public string GetName() {
+        return speciesName;
     }
 }
